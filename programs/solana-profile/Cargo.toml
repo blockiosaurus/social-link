@@ -1,0 +1,22 @@
+[package]
+name = "solana-profile"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solana_profile"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "=0.27.0"
+solana-program = "=1.14.19"
+solana-zk-token-sdk = "=1.14.19"
+borsh = "=0.9.3"
